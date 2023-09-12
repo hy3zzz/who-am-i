@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>집에 가고 싶다...</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+KR:wght@300;400;500;600;700;900&family=VT323&display=swap"
+      rel="stylesheet" />
+    <audio id="pageTurnSound" src="asset/pageflip.wav" preload="auto"></audio>
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  </head>
+  <body>
+    <div class="timer-wrapper">
+      <span id="timer">05:00</span>
+    </div>
+    <div id="book">
+      <div class="page">
+        <div class="content" id="pr">
+          <p>
+            Shin Hyewon is a student<br />and a designer working<br />in Seoul.
+            Majored in visual communication design and information science and
+            culture at SNU, studying design based on user experience and data.
+          </p>
+        </div>
+      </div>
+
+      <div class="page">
+        <div
+          class="content img"
+          style="background-image: url('asset/ilsan.png')"></div>
+        <div class="content dialog ilsan1">
+          <p>
+            I spent my school days in Ilsan,
+            <br />a first-generation new town.
+          </p>
+        </div>
+        <div
+          class="content img"
+          style="background-image: url('asset/gyeongui.png')"></div>
+      </div>
+
+      <div class="page">
+        <div
+          class="content img ilsan_poster"
+          style="background-image: url('asset/ilsan_poster.gif')"></div>
+        <div class="content dialog ilsan2">
+          <p>
+            In the 'Basic Visual<br />Communication Design Project'<br />course,
+            which is a second-year<br />major in design, <br />I also worked on
+            projects<br />with Ilsan as the theme.
+          </p>
+        </div>
+      </div>
+
+      <div class="page">
+        <div class="content dialog design1">
+          <p>
+            Actually I entered design department
+            <br />without even knowing what 'design' is.
+          </p>
+        </div>
+        <div class="content dialog design2">
+          <p>From then on,<br />starting with graphic design…</p>
+        </div>
+        <div
+          class="content img new_isc"
+          style="background-image: url('asset/new_isc.png')"></div>
+      </div>
+
+      <div class="page">
+        <div
+          class="content img planner"
+          style="background-image: url('asset/planner.png')"></div>
+        <div
+          class="content img manga"
+          style="background-image: url('asset/manga.png')"></div>
+        <div class="content dialog design3">
+          <p>…to editorial design…</p>
+        </div>
+      </div>
+
+      <div class="page">
+        <div
+          class="content img ilym"
+          style="background-image: url('asset/ilym.gif')"></div>
+      </div>
+
+      <div class="page">
+        <div
+          class="content img bloom"
+          style="background-image: url('asset/bloom.gif')"></div>
+        <div class="content dialog design4">
+          <p>
+            …and even motion graphics.
+            <br />I tried various things, <br />but couldn't find something that
+            suits me.
+          </p>
+        </div>
+      </div>
+
+      <div class="page" style="background-color: yellow">
+        <div class="content dialog web1">
+          <p>
+            Then, I stumbled upon this hobby:<br />web-based computational
+            design.
+          </p>
+        </div>
+
+        <div
+          class="content img makecornpop"
+          style="background-image: url('asset/makecornpop.gif')"></div>
+
+        <div
+          class="content img whatsinmybag"
+          style="background-image: url('asset/whatsinmybag.gif')"></div>
+      </div>
+
+      <div class="page" style="background-color: yellow">
+        <div class="content dialog web2">
+          <p>
+            I enjoyed creating strange
+            <br />websites using code.
+          </p>
+        </div>
+
+        <div
+          class="content img getrelaxed"
+          style="background-image: url('asset/getrelaxed.gif')"></div>
+        <div
+          class="content img fcm"
+          style="background-image: url('asset/fcm.gif')"></div>
+      </div>
+
+      <div class="page" style="background-color: #000">
+        <div class="content dialog web3">
+          <p>
+            On this webpage as well,
+            <br />I tried to apply <br />opacity animations to each page,
+            <br />but even after struggling for 3 hours,
+          </p>
+        </div>
+
+        <div class="content dialog web4">
+          <p>I failed.</p>
+        </div>
+      </div>
+      <div class="page" style="background-color: #000">
+        <div class="content dialog web5">
+          <p>
+            I guess
+            <br />this might also be <br />the fun part of coding….
+          </p>
+        </div>
+
+        <div
+          class="content img bananacat"
+          style="background-image: url('asset/bananacat.gif')"></div>
+      </div>
+
+      <div class="page">
+        <div class="content dialog ux1">
+          <p>
+            Anyway, <br />
+            in ‘User Centered Design’ course,
+            <br />I met great team members <br />and realized the fun<br />of IT
+            service design,
+          </p>
+        </div>
+        <div
+          class="content img wonderposter"
+          style="background-image: url('asset/wonder_poster.png')"></div>
+        <div class="content dialog ux2">
+          <p>
+            which reinforced my goal of
+            <br />becoming an UX/UI designer.
+          </p>
+        </div>
+      </div>
+
+      <div class="page">
+        <div class="content dialog ux3">
+          <p>
+            I also had the good fortune
+            <br />to win an award <br />at the Business Administration <br />in
+            Entrepreneurship department's <br />start-up competition.
+          </p>
+        </div>
+        <div
+          class="content img wonder1"
+          style="background-image: url('asset/wonder1.png')"></div>
+        <div
+          class="content img snubiz"
+          style="background-image: url('asset/snubiz.jpeg')"></div>
+      </div>
+
+      <div class="page" style="background-color: #000">
+        <div class="content dialog ux4">
+          <p>
+            Since the last vacation, <br />
+            I've been working as a <br />
+            BI design intern at a start-up. <br />
+            (going to quit the job this month)
+          </p>
+        </div>
+        <div
+          class="content img desk"
+          style="background-image: url('asset/desk.jpeg')"></div>
+        <div class="content dialog ux5">
+          <p>
+            Unfortunately,
+            <br />because I knew a bit of frontend, <br />
+            I spent half of my work period<br />
+            solely on frontend tasks.
+          </p>
+        </div>
+      </div>
+
+      <div class="page" style="background-color: #000">
+        <div class="content dialog ux6">
+          <p>
+            For the next semester, <br />
+            I want to experience UX design <br />
+            from another country,
+          </p>
+        </div>
+        <div
+          class="content img aalto"
+          style="background-image: url('asset/aalto.jpeg')"></div>
+        <div class="content dialog ux7">
+          <p>
+            so I'm working hard to prepare <br />
+            for an exchange program <br />
+            at Aalto University in Finland.
+          </p>
+        </div>
+        <div
+          class="content img gwaje"
+          style="background-image: url('asset/gwaje.png')"></div>
+      </div>
+
+      <div class="page"></div>
+
+      <div class="page">
+        <div class="content last" id="pr">
+          <p>
+            Thank you for listening! <br />
+            Also, I have my portfolio website, too!
+            <br />
+            <br /><a href="https://hyezzz.work/">https://hyezzz.work/</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/turn.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/timer.js"></script>
+  </body>
+</html>

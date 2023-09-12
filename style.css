@@ -1,0 +1,312 @@
+body {
+  overflow: hidden;
+  background-color: white;
+  font-family: "Noto Serif", serif;
+  background-image: url("asset/back.jpeg");
+  background-size: cover;
+  background-position: center center;
+}
+
+#book {
+  margin: 5% auto;
+  margin-top: 2%;
+  width: 1467px;
+  height: 1043px;
+  background-color: #fff;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
+}
+
+#book .turn-page {
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+#book div {
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+#pr {
+  position: absolute;
+  opacity: 1 !important;
+  bottom: 0;
+}
+
+#pr p {
+  color: #000;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 123.7%;
+  padding: 1rem;
+}
+
+.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: -999;
+}
+
+.content {
+  transition: opacity 0.5s; /* 0.5초 동안 opacity가 변화하도록 설정 */
+}
+
+.content,
+.content-img {
+  position: relative;
+  z-index: 2;
+}
+
+.content.dialog {
+  display: inline-flex;
+  padding: 1rem 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border: 2px solid #000;
+  background: rgba(255, 255, 255, 0.85); /* 0.7은 투명도 값을 나타냅니다. */
+}
+
+.content.dialog p {
+  color: #000;
+  font-size: 1.8rem;
+  font-family: "Noto Serif", serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 123.7%;
+}
+.content.dialog.ilsan1 {
+  position: relative;
+  left: 15px;
+}
+
+.content.dialog.ilsan2 {
+  top: -250px;
+  left: 270px;
+}
+
+.post-it {
+  margin-left: 200px;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.625rem;
+  background: #faff00;
+  transform: rotate(18deg);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.desc {
+  padding-top: 75px;
+  color: #000;
+  font-family: "Noto Sans KR";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.content.img {
+  position: relative;
+  top: 25px;
+  left: 30px;
+  width: 650px;
+  height: 450px;
+  border: 2px solid black;
+  background-repeat: no-repeat; /* 이미지 반복 방지 */
+  z-index: -99;
+}
+
+.content.img:nth-child(3) {
+  position: relative;
+  top: -125px;
+}
+
+.content.img.ilsan_poster {
+  height: 940px;
+}
+
+.content.img.new_isc {
+  width: 600px;
+  height: 900px;
+  left: 50px;
+  opacity: 1;
+}
+
+.content.dialog.design1 {
+  top: 25px;
+  left: 25px;
+}
+
+.content.dialog.design2 {
+  top: 50px;
+  left: 280px;
+}
+
+.content.img.new_isc {
+  position: relative;
+  top: -300px;
+}
+
+.content.img.manga {
+  position: relative;
+  top: 50px;
+}
+
+.content.dialog.design3 {
+  position: relative;
+  top: -25px;
+  left: 400px;
+}
+
+.content.img.bloom {
+  height: 900px;
+}
+
+.content.dialog.design4 {
+  bottom: 90px;
+}
+
+.content.dialog.web1 {
+  position: relative;
+  top: 400px;
+  left: 25px;
+}
+
+.content.dialog.web2 {
+  position: relative;
+  top: 400px;
+  left: 340px;
+}
+
+.content.dialog.web3 {
+  top: 25px;
+  left: 25px;
+}
+
+.content.dialog.web4 {
+  top: 300px;
+  left: 0px;
+}
+
+.content.dialog.web5 {
+  top: 700px;
+  left: 200px;
+}
+
+.content.img.getrelaxed,
+.content.img.makecornpop {
+  top: -120px;
+  left: 50px;
+}
+
+.content.img.whatsinmybag,
+.content.img.fcm {
+  top: -100px;
+  left: 50px;
+}
+
+.content.img.bananacat {
+  width: 200px;
+  height: 200px;
+  top: 600px;
+  left: 500px;
+}
+
+.content.img.wonderposter {
+  height: 950px;
+  top: -220px;
+}
+
+.content.dialog.ux1 {
+  top: 25px;
+  left: 25px;
+}
+
+.content.dialog.ux2 {
+  top: -370px;
+  left: 300px;
+}
+
+.content.dialog.ux3 {
+  top: 350px;
+  left: 240px;
+}
+
+.content.img.wonder1 {
+  top: -220px;
+  height: 350px;
+}
+
+.content.img.snubiz {
+  height: 590px;
+  top: -200px;
+}
+
+.content.dialog.ux4 {
+  top: 30px;
+  left: 25px;
+}
+
+.content.img.desk {
+  height: 1000px;
+  top: -250px;
+  left: 25px;
+  width: 600px;
+}
+
+.content.dialog.ux5 {
+  top: -450px;
+  left: 200px;
+}
+
+.content.dialog.ux6 {
+  top: 25px;
+  left: 25px;
+}
+
+.content.img.aalto {
+  width: 600px;
+  height: 300px;
+  top: -150px;
+  left: 130px;
+}
+
+.content.dialog.ux7 {
+  top: 300px;
+  left: 250px;
+}
+
+.content.img.gwaje {
+  top: -250px;
+}
+
+.timer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+#timer {
+  background-color: #fff;
+  color: red;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 2rem;
+  margin-right: 10px;
+  font-family: "VT323", monospace;
+}
+
+#pr .content.last {
+  font-size: 4rem;
+}
