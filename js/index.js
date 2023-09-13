@@ -1,10 +1,9 @@
 $(document).ready(function () {
-  // 초기에 content 숨기기
-  $(".content").css("opacity", 0);
-
   $("#book").bind("turning", function (event, page, view) {
-    // 모든 .content 요소의 opacity를 0으로 설정
-    $(".content").css("opacity", 0);
+    $(".content").css({
+      opacity: 0,
+      transform: "translateY(20px)",
+    });
   });
 
   $("#book").bind("turned", function (event, page, view) {
@@ -14,18 +13,19 @@ $(document).ready(function () {
       );
       pageContentElements.each(function (index, element) {
         setTimeout(function () {
-          $(element).animate({ opacity: 1 }, 500);
+          $(element).css({
+            opacity: 1,
+            transform: "translateY(0)",
+          });
         }, 750 * (index + 1));
       });
     }
 
     if (view[0]) {
-      console.log("Left Page Number:", view[0]);
       fadeInContentOfPage(view[0]);
     }
 
     if (view[1]) {
-      console.log("Right Page Number:", view[1]);
       setTimeout(function () {
         fadeInContentOfPage(view[1]);
       }, 1000 *
