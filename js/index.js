@@ -15,7 +15,7 @@ $(document).ready(function () {
       pageContentElements.each(function (index, element) {
         setTimeout(function () {
           $(element).animate({ opacity: 1 }, 500);
-        }, 0 * (index + 1));
+        }, 750 * (index + 1));
       });
     }
 
@@ -28,7 +28,7 @@ $(document).ready(function () {
       console.log("Right Page Number:", view[1]);
       setTimeout(function () {
         fadeInContentOfPage(view[1]);
-      }, 0 *
+      }, 1000 *
         $("#book .page[data-page-number='" + view[0] + "'] .content").length);
     }
   });
