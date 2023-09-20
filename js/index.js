@@ -1,4 +1,12 @@
 $(document).ready(function () {
+  var audio = document.getElementById("myAudio");
+
+  audio.play().catch(function (error) {
+    // 자동재생이 차단된 경우에 대한 처리
+    console.error("Auto-play was prevented");
+    // 예: 재생 버튼을 사용자에게 보여준다거나, 경고 메시지를 표시한다거나 등
+  });
+
   $("#book").bind("turning", function (event, page, view) {
     $(".content").css({
       opacity: 0,
