@@ -4,6 +4,10 @@ $(document).ready(function () {
       opacity: 0,
       transform: "translateY(20px)",
     });
+
+    var audioElement = document.getElementById("pageTurnSound");
+    audioElement.currentTime = 0; // 오디오를 시작부터 재생
+    audioElement.play();
   });
 
   $("#book").bind("turned", function (event, page, view) {
